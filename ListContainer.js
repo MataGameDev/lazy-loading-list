@@ -9,7 +9,7 @@ function ListContainer(props) {
     function fetchItems(){
         return api
             .fetchItems()
-            .then((resp)=>resp.json)
+            .then((resp)=>resp.json())
             .then(({items})=>{
                 setData([
                     ...data,
